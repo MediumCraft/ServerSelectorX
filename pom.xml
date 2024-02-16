@@ -165,7 +165,7 @@
 
 	</dependencies>
 
-	<sitories>
+	<repositories>
 
 		<repository>
 			<id>spigot-repo</id>
