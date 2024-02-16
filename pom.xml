@@ -109,7 +109,7 @@
 		</dependency>
 
 		<dependency>
-			<groupId>xyz.derkades</groupId>
+			<groupId>com.github.derkades</groupId>
 			<artifactId>Derkutils</artifactId>
 			<version>spigot-1.13</version>
 		</dependency>
@@ -165,7 +165,7 @@
 
 	</dependencies>
 
-	<repositories>
+	<sitories>
 
 		<repository>
 			<id>spigot-repo</id>
@@ -180,6 +180,11 @@
 		<repository>
 			<id>placeholderapi</id>
 			<url>https://repo.extendedclip.com/content/repositories/placeholderapi</url>
+		</repository>
+
+		<repository>
+			<id>jitpack</id>
+			<url>https://jitpack.io</url>
 		</repository>
 
 	</repositories>
