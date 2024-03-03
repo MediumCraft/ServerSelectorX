@@ -109,7 +109,7 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.github.derkades</groupId>
+			<groupId>xyz.derkades</groupId>
 			<artifactId>Derkutils</artifactId>
 			<version>spigot-1.13</version>
 		</dependency>
