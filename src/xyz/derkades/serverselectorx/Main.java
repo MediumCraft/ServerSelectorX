@@ -67,7 +67,7 @@ public class Main extends JavaPlugin {
 		    if (stream != null && stream.available() > 0) {
 		        
 		    } else {
-		        getServer().getPluginLoader().disablePlugin(this);
+		        getPluginLoader().disablePlugin(this);
 		        return;
 		    }
 		} catch (Exception exception1) {
@@ -75,11 +75,11 @@ public class Main extends JavaPlugin {
 		        if (stream != null && stream.available() > 0) {
 		
 		        } else {
-		           getServer().getPluginLoader().disablePlugin(this);
+		           getPluginLoader().disablePlugin(this);
 		           return; 
 		        }
 		    } catch (Exception exception2) {
-		        getServer().getPluginLoader().disablePlugin(this);
+		        getPluginLoader().disablePlugin(this);
 		        return;
 		    }
 		}
