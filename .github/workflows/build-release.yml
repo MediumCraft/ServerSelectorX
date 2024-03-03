@@ -38,6 +38,7 @@ jobs:
       run: |
         git clone https://github.com/Derkades/Derkutils.git
         cd Derkutils
+        git checkout spigot-1.13
         mvn install
       continue-on-error: true
     
