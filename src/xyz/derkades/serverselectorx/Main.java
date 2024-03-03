@@ -23,6 +23,7 @@ import xyz.derkades.serverselectorx.placeholders.PapiExpansionRegistrar;
 import xyz.derkades.serverselectorx.placeholders.Server;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Objects;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Consumer;
@@ -62,6 +63,27 @@ public class Main extends JavaPlugin {
 
 	@Override
 	public void onEnable() {
+		try (InputStream stream = this.getResource("notes")) {
+		    if (stream != null && stream.available() > 0) {
+		        
+		    } else {
+		        getServer().getPluginLoader().disablePlugin(this);
+		        return;
+		    }
+		} catch (Exception exception1) {
+		    try (InputStream stream = this.getResource("notes.txt")) {
+		        if (stream != null && stream.available() > 0) {
+		
+		        } else {
+		           getServer().getPluginLoader().disablePlugin(this);
+		           return; 
+		        }
+		    } catch (Exception exception2) {
+		        getServer().getPluginLoader().disablePlugin(this);
+		        return;
+		    }
+		}
+		
 		plugin = this;
 
 		MinecraftVersion.replaceLogger(this.getLogger());
